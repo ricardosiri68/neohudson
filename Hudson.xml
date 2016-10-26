@@ -476,7 +476,6 @@ function createSummaryAndThumb(pID){
                     </b:if>
                   </b:loop>
                 </ul>
-                <b:include name='quickedit'/>
               </div>
             </b:includable>
   </b:widget>
@@ -484,33 +483,6 @@ function createSummaryAndThumb(pID){
 </div>
 </div>
 
-<b:section class='sidebarleftnbt' id='sidebarleftnbt' preferred='yes'>
-  <b:widget id='HTML4' locked='false' title='BTemplates.com' type='HTML' visible='true'>
-    <b:includable id='main'>
-        <!-- only display title if it's non-empty -->
-        <b:if cond='data:title != &quot;&quot;'>
-            <h2 class='title'><data:title/></h2>
-        </b:if>
-        <div class='widget-content'>
-            <data:content/>
-        </div>
-        <b:include name='quickedit'/>
-    </b:includable>
-  </b:widget>
-  <b:widget id='HTML1' locked='false' title='' type='HTML' visible='true'>
-    <b:includable id='main'>
-  <!-- only display title if it's non-empty -->
-  <b:if cond='data:title != &quot;&quot;'>
-    <h2 class='title'><data:title/></h2>
-  </b:if>
-  <div class='widget-content'>
-    <data:content/>
-  </div>
-
-  <b:include name='quickedit'/>
-</b:includable>
-  </b:widget>
-</b:section>
 </div>
 
 <div id='header-holdernbt'>
