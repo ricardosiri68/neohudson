@@ -1098,7 +1098,7 @@ function createSummaryAndThumb(pID){
 <b:if cond='data:blog.pageType != &quot;static_page&quot;'>
 <b:if cond='data:blog.pageType != &quot;item&quot;'>
 <div style='float:right;padding-right:10px;margin-top:10px;'>
-<a class='morer' expr:href='data:post.url'>Read More</a>
+<a class='morer' expr:href='data:post.url'>Leer más</a>
 </div>
 </b:if>
 </b:if>
@@ -1124,7 +1124,7 @@ function createSummaryAndThumb(pID){
 <div class='post-metanbt'>
 <b:if cond='data:blog.pageType != &quot;static_page&quot;'>    	  	
 <b:if cond='data:post.labels'><p><i class='fa fa-folder-open'/>&amp;nbsp;&amp;nbsp;<b:loop values='data:post.labels' var='label'><a expr:href='data:label.url' rel='tag'><data:label.name/></a><b:if cond='data:label.isLast != &quot;true&quot;'> / </b:if></b:loop></p></b:if>
-<b:if cond='data:post.allowComments'><p><i class='fa fa-comment'/>&amp;nbsp;&amp;nbsp;<a expr:href='data:post.addCommentUrl' expr:onclick='data:post.addCommentOnclick'><b:if cond='data:post.numComments == 0'>No Comments</b:if><b:if cond='data:post.numComments == 1'>1 Comment</b:if><b:if cond='data:post.numComments &gt;= 2'><data:post.numComments/> Comments</b:if></a></p></b:if>
+<b:if cond='data:post.allowComments'><p><i class='fa fa-comment'/>&amp;nbsp;&amp;nbsp;<a expr:href='data:post.addCommentUrl' expr:onclick='data:post.addCommentOnclick'><b:if cond='data:post.numComments == 0'>Aun sin comentarios</b:if><b:if cond='data:post.numComments == 1'>1 Comentario</b:if><b:if cond='data:post.numComments &gt;= 2'><data:post.numComments/> Comentarios</b:if></a></p></b:if>
 </b:if>   	
 </div>
 
@@ -1409,7 +1409,7 @@ function createSummaryAndThumb(pID){
 
 <div class='col-sm-12 col-md-9 col-md-offset-3 col-lg-3 col-lg-offset-0' id='sidebar-rightnbt'>	
 <b:section class='sidebarrightnbt' id='sidebarrightnbt' preferred='yes'>
-  <b:widget id='PopularPosts1' locked='false' title='Popular Posts' type='PopularPosts' version='1' visible='true'>
+  <b:widget id='PopularPosts1' locked='false' title='Articulos Populares' type='PopularPosts' version='1' visible='true'>
     <b:includable id='main'>
   <b:if cond='data:title'><h2><data:title/></h2></b:if>
   <div class='widget-content popular-posts'>
@@ -1462,7 +1462,7 @@ function createSummaryAndThumb(pID){
   </div>
 </b:includable>
   </b:widget>
-  <b:widget id='Label1' locked='false' title='Categories' type='Label' version='1' visible='true'>
+  <b:widget id='Label1' locked='false' title='Categorias' type='Label' version='1' visible='true'>
     <b:includable id='main'>
   <b:if cond='data:title'>
     <h2><data:title/></h2>
@@ -1501,7 +1501,7 @@ function createSummaryAndThumb(pID){
   </div>
 </b:includable>
   </b:widget>
-  <b:widget id='BlogArchive1' locked='false' title='Blog Archive' type='BlogArchive' version='1' visible='true'>
+  <b:widget id='BlogArchive1' locked='false' title='Articulos anteriores' type='BlogArchive' version='1' visible='true'>
     <b:includable id='main'>
   <b:if cond='data:title'>
     <h2><data:title/></h2>
