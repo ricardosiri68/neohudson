@@ -26,8 +26,8 @@ config = {
 };
 
 gulp.task('svg', function () {
-  gulp.src('*.svg', {cwd: 'resources/assets/svg'})
+  gulp.src('*.svg', {cwd: 'assets/svg'})
   .pipe(plumber())
   .pipe(svgSprite(config))
-  .pipe(gulp.dest('resources/assets/svg/dst'));
+  .pipe(gulp.dest('build/dist'));
 });
